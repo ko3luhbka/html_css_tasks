@@ -1,0 +1,45 @@
+<!-- https://gist.github.com/codedokode/58ebc90bd006baf4b35c#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-4 -->
+<!-- See also https://css-live.ru/articles/zagadochnye-otstupy-mezhdu-inlajn-blokami.html -->
+
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Задание 4</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  ul {
+    background-color:lightblue;
+    padding: 10px;
+  }
+
+  li {
+    background-color: yellow;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+    /* The key property of this task */
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  li:last-child {
+    vertical-align: bottom;
+  }
+
+  </style>
+  <body>
+    <ul>
+      <!-- Don't close `li` tags to remove gaps between inline-block elements thus
+      preventing unwished space appear -->
+      <li>999999<br>100<br>200
+      <li>100<br>200
+      <li>1000
+    </ul>
+  </body>
+</html>
