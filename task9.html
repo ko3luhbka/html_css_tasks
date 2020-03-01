@@ -1,0 +1,48 @@
+<!-- https://gist.github.com/codedokode/58ebc90bd006baf4b35c#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-9 -->
+
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Задание 9</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container > div {
+      display: flex;
+      background-color: lightgrey;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .square {
+      background-color: yellow;
+      flex-basis: 150px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      height: 150px;
+    }
+
+    article {
+      padding: 0 10px;
+      /* margin-left: auto; */
+    }
+
+  </style>
+  <div class='container'>
+    <div>
+      <div class='square'></div>
+      <article>Одна или несколько строк текста размером 14 px</article>
+    </div>
+    <div>
+      <div class='square'></div>
+      <article>
+        Одна или несколько строк текста, причем блок текста может быть и больше, 
+        чем блок слева, а может быть и меньше, как получится, хоть так, хоть так
+      </article>
+    </div>
+</html>
