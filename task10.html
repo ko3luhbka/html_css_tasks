@@ -1,0 +1,86 @@
+<!-- https://gist.github.com/codedokode/58ebc90bd006baf4b35c#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-10 -->
+<!-- https://stackoverflow.com/a/28341481 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Задание 10</title>
+</head>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 14px;
+    }
+
+    em {
+      text-decoration: underline;
+      text-decoration-color: darkorange;
+    }
+
+    img {
+      /* Get rid of small 3-4 px gap at the bottom of the image */
+      display: block;
+    }
+
+    figure {
+      position: relative;
+      /* display: table; */
+      /* Set margin and padding values to 0 because Firefox adds 40 px left/right 
+      margins and 1 em top/bottom ones */
+      margin: 0;
+      padding: 0;
+      /* To make figcaption have the same width as image */
+      width: min-content;
+    }
+
+    /* figcaption {
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.2);
+      display: table-caption;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      font-size: 24px;
+    } */
+
+    figcaption {
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      padding: 10px 0 10px 10px;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 24px;
+      color: whitesmoke;
+    }
+
+    .subtitle {
+      display: block;
+      font-size: 14px;
+    }
+
+  </style>
+  <body style="max-width: 500px; padding-left: 80px; padding-right: 20px;">
+    <p>Предсказуемость непредсказуема. Предсказуемость непредсказуема. 
+    Предсказуемость непредсказуема. Предсказуемость непредсказуема. 
+    Предсказуемость <em data-ref="1">непредсказуема и недоказуема</em>. 
+    Предсказуемость непредсказуема. Предсказуемость непредсказуема. 
+    Предсказуемость совсем ни разу не  <em data-ref="2, 3, 4">непредсказуема</em>. 
+    Предсказуемость непредсказуема. Предсказуемость непредсказуема. 
+    Предсказуемость непредсказуема. </p>
+    
+    <p>Однако, здравствуйте.</p>
+    
+    <figure>
+      <figcaption>
+          A cute cat
+          <span class="subtitle">is in the picture</span>
+      </figcaption>
+      <!-- <img src="cats_task10.jpg" alt="A cute Kitten"> -->
+      <img src="640_480.png" alt="A cute Kitten">
+      <!-- <img src="http://lorempixel.com/350/250/cats" alt="A cute Kitten"> -->
+    </figure>
+  </body>
+</html>
