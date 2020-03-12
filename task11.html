@@ -24,6 +24,7 @@
       padding: 10px;
       border: solid gray 1px;
       margin-right: -1px;
+      transition: background-color 0.5s;
     }
 
     label:first-child input + span {
@@ -36,6 +37,11 @@
 
     label input:active + span {
       background-color: lightgray;
+    }
+
+    label input:hover + span {
+      background-color: rgb(230, 230, 230);
+
     }
 
     label input:checked + span {
